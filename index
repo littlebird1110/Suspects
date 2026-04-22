@@ -1,1 +1,72 @@
+<html>
+ <head>
+  <style>
+      body {
+      background-image: url('images/Suspects.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0 auto;
+    }
 
+  /* The transparent "Hotspot" */
+  .hotspot {
+    position: absolute;
+    cursor: pointer;
+    /* Use background: rgba(255, 0, 0, 0.3); to see them while testing!, transparent when ready */
+    background: rgba(255,0,0,0.3); 
+  }
+
+  /* Position each clue area specifically */
+  #clue-Elizabeth {
+    top: 50%;
+    left: 10%;
+    width: 5%;
+    height: 5%;
+  }
+
+#clue-Caroline {
+    top: 40%;
+    left: 10%;
+    width: 5%;
+    height: 5%;
+  }
+
+ #clue-Charles {
+    top: 30%;
+    left: 10%;
+    width: 5%;
+    height: 5%;
+  }
+
+ #clue-Benedict {
+    top: 20%;
+    left: 10%;
+    width: 5%;
+    height: 5%;
+  }
+
+ #clue-Able {
+    top: 10%;
+    left: 10%;
+    width: 5%;
+    height: 5%;
+  }
+</style>
+</head>
+
+<div id="art-canvas">
+  <!-- Invisible clickable areas -->
+  <div id="clue-Elizabeth" class="hotspot" onclick="showClue('Elizabeth')"></div>
+  <div id="clue-Caroline" class="hotspot" onclick="showClue('Caroline')"></div>
+  <div id="clue-Charles" class="hotspot" onclick="showClue('Charles')"></div>
+  <div id="clue-Benedict" class="hotspot" onclick="showClue('Benedict')"></div>
+  <div id="clue-Able" class="hotspot" onclick="showClue('Able')"></div>
+</div>
+
+<script>
+  function showClue(message) {
+    alert(message);
+  }
+</script>
